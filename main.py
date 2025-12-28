@@ -30,7 +30,7 @@ with open("src/Inventory.json", "r") as file:
                             total_value += value*item_data["Count"]
                         except TypeError as e:
                             pass
-                        text += f"{item_tag}_{item_data["ItemName"]}_{item_data["ItemType"]}_{item_data["Rarity"]}_{item_data["Count"]}_{value}\n"
+                        text += f"{item_tag}-{item_data["ItemName"]}-{item_data["ItemType"]}-{item_data["Rarity"]}-{item_data["Count"]}-{value}\n"
                     else:
                         print(item_tag, item_data)
         print(total_value)
